@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Myself - Media</title>
+  </head>
+  <body>
+    <h1>WELCOME</h1>
+    <br>
+    <p>
+      <strong> Hello! </strong> Walk with me as i show and tell you more about
+      myself through all existing media element available in HTML.
+    </p>
+    <br>
+    <!-- Responsive Picture Element -->
+    <h2>Me in Pictures</h2>
+    <br>
+    <picture>
+      <!-- Mobile -->
+       <p><strong> Everyday i wake up with the feeling that i can do more, and i am on the journey to getting it done rightly so.</strong></p>
+      <source
+        srcset="./Assets/images/mobile.jpg"
+        media="(max-width: 576px)"
+        width="100%"
+      />
+      <!-- Tablet -->
+      <source
+        srcset="./Assets/images/tablet.jpg"
+        media="(max-width: 1024px)"
+        width="100%"
+      />
+      <!-- Laptop -->
+      <source
+        srcset="./Assets/images/laptop.jpg"
+        media="(min-width: 1025px)"
+        width="100%"
+      />
+      <!-- Default -->
+      <img src="./Assets/images/default.jpg" alt="Beautiful cat" width="100%" />
+    </picture>
+
+    <!-- Audio Element -->
+    <h2>Hear My Voice</h2>
+    <audio controls>
+      <source src="./Assets/Audios/Audio.mp3" type="audio/mp3" />
+    </audio>
+    <p>This is me, talking about my journey.</p>
+
+    <!-- Video Element -->
+    <h2>Watch My Story</h2>
+    <video controls width="80%" poster="video-poster.jpg">
+      <source src="./Assets/Videos/chill guy.mp4" type="video/mp4" />
+      <source src="my-story.webm" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+    <hr />
+    <footer>
+      <p>Thanks for stopping by.</p>
+      <li><a href="../table.html">Table in HTML</a></li>
+    </footer>
+  </body>
+</html>
